@@ -1,0 +1,22 @@
+// registration
+export const REGISTRATION_REQUEST = 'REGISTRATION_REQUEST';
+export const REGISTRATION_SUCCESS = 'REGISTRATION_SUCCESS';
+export const REGISTRATION_ERROR = 'REGISTRATION_ERROR';
+
+// authenticate
+export const SIGN_IN_REQUEST = 'SIGN_IN_REQUEST';
+export const SIGN_IN_SUCCESS = 'SIGN_IN_SUCCESS';
+export const SIGN_IN_ERROR = 'SIGN_IN_ERROR';
+export const SIGN_OUT_REQUEST = 'SIGN_OUT_REQUEST';
+export const SIGN_OUT_SUCCESS = 'SIGN_OUT_SUCCESS';
+export const SIGN_OUT_ERROR = 'SIGN_OUT_ERROR';
+
+// oAuthenticate
+export const OAUTHENTICATE_REQUEST = 'OAUTHENTICATE_REQUEST';
+export const VALIDATE_TOKEN_REQUEST = 'VALIDATE_TOKEN_REQUEST';
+
+// token
+export const UPDATE_HEADERS = 'UPDATE_HEADERS';
+
+// cookie
+export const UPDATE_COOKIE = 'UPDATE_COOKIE';

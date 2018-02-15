@@ -1,0 +1,13 @@
+@import "../../utils/mixins";
+
+.ch-registration {
+  @include formStyle('registration', 500px, 55px);
+  .ch-registration-form {
+    .ch-registration-form-footer {
+      padding-top: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}

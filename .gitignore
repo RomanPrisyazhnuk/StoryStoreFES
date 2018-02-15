@@ -1,0 +1,5 @@
+.idea
+node_modules
+coverage
+package-lock.json
+__tests__/components/**/__snapshots__/
