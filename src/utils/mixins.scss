@@ -3,8 +3,6 @@
 @mixin formStyle ($element, $width-form, $padding-form) {
   .ch-#{$element}-form {
     width: $width-form;
-    background: #fff;
-    border-radius: 10px;
     padding: $padding-form;
     overflow: hidden;
     box-sizing: border-box;
@@ -12,7 +10,6 @@
       font-size: 40px;
       line-height: 1.2;
       text-align: center;
-      padding-bottom: 50px;
       font-family: Poppins-Bold;
     }
     &-input-wrap {
@@ -63,7 +60,7 @@
       -o-transition: all 0.4s;
       -moz-transition: all 0.4s;
       &:hover {
-        color: $color-hover;
+        color: $color-light-brown;
       }
     }
     &-button-wrap {
@@ -85,11 +82,11 @@
       z-index: -1;
       width: 300%;
       height: 100%;
-      background: $color-hover;
-      background: -webkit-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
-      background: -o-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
-      background: -moz-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
-      background: linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+      background: $color-light-brown;
+      background: -webkit-linear-gradient(right, $color-light-brown, $color-dark-brown, $color-light-brown, $color-dark-brown);
+      background: -o-linear-gradient(right, $color-light-brown, $color-dark-brown, $color-light-brown, $color-dark-brown);
+      background: -moz-linear-gradient(right, $color-light-brown, $color-dark-brown, $color-light-brown, $color-dark-brown);
+      background: linear-gradient(right, $color-light-brown, $color-dark-brown, $color-light-brown, $color-dark-brown);
       top: 0;
       left: -100%;
       -webkit-transition: all 0.8s;

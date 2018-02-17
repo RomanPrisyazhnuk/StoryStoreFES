@@ -1,5 +1,6 @@
 import './RegistrationPage.scss';
 import React, { Component } from 'react';
+import BannerBlock from 'components/BannerBlock/BannerBlock';
 import { Link } from 'react-router';
 import PropTypes from 'prop-types';
 import { validateRegistrationSignIn } from 'constants/validateConstants';
@@ -74,66 +75,71 @@ class RegistrationPage extends Component {
     };
     render () {
         return (
-            <div className="ch-registration">
-                <form className="ch-registration-form">
-                    <header className="ch-registration-form-header">Registration</header>
-                    <div className="ch-registration-from-container">
-                        <div className="ch-registration-form-input-wrap">
-                            <span className="ch-registration-form-label">Email</span>
-                            <i className="ch-registration-form-icon fas fa-envelope"/>
-                            <input type="email"
-                                className="ch-registration-form-input"
-                                placeholder="Type your email"
-                                name="email"
-                                maxLength={30}
-                                value={this.state.email}
-                                onChange={this.handleChangeInput}/>
-                        </div>
-                        <div className="ch-registration-form-input-wrap">
-                            <span className="ch-registration-form-label">Username</span>
-                            <i className="ch-registration-form-icon fas fa-user"/>
-                            <input type="text"
-                                className="ch-registration-form-input"
-                                placeholder="Type your username"
-                                name="userName"
-                                maxLength={30}
-                                value={this.state.userName}
-                                onChange={this.handleChangeInput}/>
-                        </div>
-                        <div className="ch-registration-form-input-wrap">
-                            <span className="ch-registration-form-label">Password</span>
-                            <i className="ch-registration-form-icon fas fa-lock"/>
-                            <input type="password"
-                                className="ch-registration-form-input"
-                                placeholder="Type your password"
-                                name="password"
-                                maxLength={30}
-                                value={this.state.password}
-                                onChange={this.handleChangeInput}/>
-                        </div>
-                        <div className="ch-registration-form-input-wrap">
-                            <span className="ch-registration-form-label">Confirm password</span>
-                            <i className="ch-registration-form-icon fas fa-key"/>
-                            <input type="password"
-                                className="ch-registration-form-input"
-                                placeholder="Type your confirm password"
-                                name="confirmPassword"
-                                maxLength={30}
-                                value={this.state.confirmPassword}
-                                onChange={this.handleChangeInput}/>
-                        </div>
-                        <div className="ch-registration-form-button-wrap">
-                            <div className="ch-registration-form-button-background"/>
-                            <button className="ch-registration-form-button"
-                                disabled={this.props.isLoading}
-                                onClick={this.registrationOnClick}>registration</button>
-                        </div>
+            <div className='ch-reg-auth'>
+                <BannerBlock />
+                <div className="ch-registration">
+                    <div className="ch-registration-form-wrap">
+                        <form className="ch-registration-form">
+                            <header className="ch-registration-form-header">Registration</header>
+                            <div className="ch-registration-from-container">
+                                <div className="ch-registration-form-input-wrap">
+                                    <span className="ch-registration-form-label">Email</span>
+                                    <i className="ch-registration-form-icon fas fa-envelope"/>
+                                    <input type="email"
+                                        className="ch-registration-form-input"
+                                        placeholder="Type your email"
+                                        name="email"
+                                        maxLength={30}
+                                        value={this.state.email}
+                                        onChange={this.handleChangeInput}/>
+                                </div>
+                                <div className="ch-registration-form-input-wrap">
+                                    <span className="ch-registration-form-label">Username</span>
+                                    <i className="ch-registration-form-icon fas fa-user"/>
+                                    <input type="text"
+                                        className="ch-registration-form-input"
+                                        placeholder="Type your username"
+                                        name="userName"
+                                        maxLength={30}
+                                        value={this.state.userName}
+                                        onChange={this.handleChangeInput}/>
+                                </div>
+                                <div className="ch-registration-form-input-wrap">
+                                    <span className="ch-registration-form-label">Password</span>
+                                    <i className="ch-registration-form-icon fas fa-lock"/>
+                                    <input type="password"
+                                        className="ch-registration-form-input"
+                                        placeholder="Type your password"
+                                        name="password"
+                                        maxLength={30}
+                                        value={this.state.password}
+                                        onChange={this.handleChangeInput}/>
+                                </div>
+                                <div className="ch-registration-form-input-wrap">
+                                    <span className="ch-registration-form-label">Confirm password</span>
+                                    <i className="ch-registration-form-icon fas fa-key"/>
+                                    <input type="password"
+                                        className="ch-registration-form-input"
+                                        placeholder="Type your confirm password"
+                                        name="confirmPassword"
+                                        maxLength={30}
+                                        value={this.state.confirmPassword}
+                                        onChange={this.handleChangeInput}/>
+                                </div>
+                                <div className="ch-registration-form-button-wrap">
+                                    <div className="ch-registration-form-button-background"/>
+                                    <button className="ch-registration-form-button"
+                                        disabled={this.props.isLoading}
+                                        onClick={this.registrationOnClick}>registration</button>
+                                </div>
+                            </div>
+                            <footer className="ch-registration-form-footer">
+                                <span className="ch-registration-form-text-content ch-margin-bottom-big">Or Sign In Using</span>
+                                <Link to="/sign_in" className="ch-registration-form-link">SIGN IN</Link>
+                            </footer>
+                        </form>
                     </div>
-                    <footer className="ch-registration-form-footer">
-                        <span className="ch-registration-form-text-content ch-margin-bottom-big">Or Sign In Using</span>
-                        <Link to="/sign_in" className="ch-registration-form-link">SIGN IN</Link>
-                    </footer>
-                </form>
+                </div>
             </div>
         );
     }

@@ -33,10 +33,6 @@ textarea:-ms-input-placeholder { color: $color-placeholder;}
   .ch-container {
     width: 100%;
     min-height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     background-image: url('../../../public/static/images/bgc-image.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -46,5 +42,12 @@ textarea:-ms-input-placeholder { color: $color-placeholder;}
     //background: -o-linear-gradient(-135deg, #c850c0, #4158d0);
     //background: -moz-linear-gradient(-135deg, #c850c0, #4158d0);
     //background: linear-gradient(-135deg, #c850c0, #4158d0);
+    .ch-reg-auth{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
   }
+
 }
