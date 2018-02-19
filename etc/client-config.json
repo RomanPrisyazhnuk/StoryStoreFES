@@ -17,6 +17,21 @@
     "signOut": "auth/sign_out/",
     "validateToken": "auth/validate_token/",
     "registration": "auth/"
+  },
+
+  "games":{
+    "games": "/games/",
+    "getNextGames": "/games/get_games/"
+  },
+
+  "comments":{
+    "commentsScope": "/comments/",
+    "comments": "/comments/"
+  },
+
+  "likes":{
+    "updateLike": "/like/",
+    "getLikesNames": "/get_likes_names/"
   }
 }
 

@@ -1,0 +1,19 @@
+@import '../../.././utils/Mixins.scss';
+.st-posts {
+  max-width: 570px;
+  .st-posts-has-more{
+    @include textStyle($font-size-medium, $color-white, bold);
+    background-color: $color-blue;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px;
+    cursor: pointer;
+    &:hover{
+      background-color: $color-dark-blue;
+    }
+    span{
+      cursor: pointer;
+    }
+  }
+}
