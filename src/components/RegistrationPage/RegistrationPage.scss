@@ -26,3 +26,23 @@
     }
   }
 }
+.custom-tag {
+  max-width: 100%;
+  height: 350px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.carousel-caption{
+  h3 {
+    height: 127px;
+    color: $color-light-brown;
+    text-shadow: 2px 2px $color-dark-brown;
+    font-size: 3.75rem;
+  }
+  p {
+    color: $color-light-brown;
+    text-shadow: 2px 2px #000000;
+    font-size: 3.75rem;
+  }
+}
