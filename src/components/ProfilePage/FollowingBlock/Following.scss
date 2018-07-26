@@ -1,0 +1,26 @@
+.st-following-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  .st-following-info-wrap {
+    align-self: center;
+    word-break: break-word;
+    .st-following-following-name { }
+    .st-following-following-email {
+      font-size: 12px;
+      color: #b3b3b3;
+    }
+  }
+  .st-following-button {
+    display: flex;
+    align-self: center;
+    width: 30%;
+    height: 35px;
+    button {
+      width: 100%;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 12px;
+    }
+  }
+}

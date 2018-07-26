@@ -1,0 +1,16 @@
+.st-game-forecast-wrap {
+  display: flex;
+  justify-content: flex-end;
+  line-height: 17px;
+  align-items: center;
+  .st-game-forecast-time-title {
+    color: #999;
+    font-size: 11px;
+  }
+  .st-game-forecast-time-icon {
+    margin-right: 5px;
+    svg {
+      vertical-align: middle;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.st-notification-wrap {
+  border-bottom: 1px solid #e9ecee;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3px;
+  padding: 3px;
+  .st-notification-block {
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+    .st-notification-image {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      cursor: pointer;
+      margin-right: 5px;
+    }
+    .st-notification-content {
+      align-self: center;
+      line-height: 12px;
+      font-size: 12px;
+      word-break: break-word;
+      .st-notification-content-author-name {
+        font-weight: bold;
+        word-wrap: break-word;
+        cursor: pointer;
+      }
+    }
+  }
+  .st-notification-btn-wrap {
+    margin: 5px 0 5px 35px;
+    display: flex;
+    justify-content: space-around;
+    .st-notification-btn {
+      width: 48%;
+      height: 25px;
+      font-size: 13px;
+    }
+  }
+  .st-notification-icon-wrap {
+    align-self: center;
+    .st-notification-delete {
+      cursor: pointer;
+      &:hover {
+        fill: #000;
+      }
+    }
+  }
+}

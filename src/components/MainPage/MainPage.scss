@@ -1,0 +1,28 @@
+.st-main-page {
+  padding-top: 10px;
+  width: 100vw;
+}
+.st-grid {
+  display: flex;
+  .st-left-area {
+    width: 20%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .st-center-area {
+    width: 50%;
+    margin: 0 15px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .st-right-area{
+    width: 30%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+  }
+}
+//#widgets {
+//  @extend .adaptation-media;
+//}

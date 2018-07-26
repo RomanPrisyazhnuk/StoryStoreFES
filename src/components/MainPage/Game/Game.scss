@@ -1,0 +1,161 @@
+@import "../../../utils/mixins";
+// variables
+$color-white: #fff;
+
+// Block styles
+.st-game-wrap {
+  margin-bottom: 10px;
+  max-width: 570px;
+  //padding: 15px;
+  background-color: $color-white;
+  .st-game-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px 0 15px;
+    margin-bottom: 10px;
+    .st-game-header-user-info {
+      // max-width: 421px;
+      .st-game-author {
+        position: relative;
+        font-size: 14px;
+        font-weight: bold;
+        word-break: break-word;
+        .st-game-author-text {
+          // margin-right: 5px;
+          color: $color-blue;
+          cursor: pointer;
+          text-decoration: none;
+          &:hover {
+            color: #2d7091;
+          }
+        }
+      }
+      .st-game-status-block {
+        .st-game-privacy-image{
+          width: 15px;
+          height: 15px;
+        }
+        margin-right: 10px;
+        font-size: 11px;
+        display: flex;
+        .st-game-status-text {
+          margin-right: 5px;
+        }
+      }
+    }
+    .st-game-forecast-dropdown {
+      display: flex;
+      .st-game-forecast {
+        font-weight: bold;
+        width: 115px;
+      }
+    }
+  }
+  .st-game-container {
+    padding: 0 15px;
+    .st-game-sell-buy-invisible-wrap {
+      height: 43px;
+    }
+    .st-trading-info-invisible-wrap {
+      height: 260px;
+    }
+    .st-game-image-block {
+      margin: 10px 0 0 0;
+      img {
+        display: block;
+        max-height: 500px;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .st-game-content-wrap {
+      margin-bottom: 10px;
+      .st-game-content {
+        // margin-bottom: 10px;
+        max-height: 315px;
+        overflow: hidden;
+        word-wrap: break-word;
+        white-space: pre-wrap;
+      }
+    }
+    .st-game-picture-chart {
+      width: 540px;
+    }
+    .st-game-more-content {
+      cursor: pointer;
+      color: #007bff;
+    }
+    .st-trading-info-wrap {
+      margin-bottom: 10px;
+    }
+    .st-view-mode-toggle-wrap {
+      border-bottom: 1px solid #ddd;
+      border-top: 1px solid #ddd;
+      margin-bottom: 10px;
+      a {
+        display: block;
+        padding: 10px 0;
+        cursor: pointer;
+        color: #007bff;
+        &:hover {
+          color: #2d7091;
+        }
+      }
+    }
+    .st-game-file-block-wrap {
+      display: flex;
+      margin-bottom: 10px;
+      .st-game-file-title {
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+  .st-meta-content-wrap {
+    margin-bottom: 10px;
+    .st-meta-content-description {
+      word-break: break-word;
+    }
+    .st-meta-content-title {
+      font-weight: bold;
+    }
+    img.st-meta-content-image {
+      width: auto;
+      height: 100%;
+      background-position-y: center;
+      background-position-x: center;
+    }
+  }
+  .st-game-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    margin-bottom: 10px;
+    line-height: 30px;
+    .st-game-comment {
+      span {
+        margin: 0 0 0 2px;
+      }
+    }
+    .st-game-share{
+      display: flex;
+      div {
+        align-self: center;
+      }
+      .st-game-share-icon{
+        cursor: pointer;
+        margin-left: 10px;
+        width: 24px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

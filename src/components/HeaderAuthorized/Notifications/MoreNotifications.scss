@@ -1,0 +1,10 @@
+@import '../../../utils/mixins';
+.st-notifications-more {
+  font-size: 14px;
+  color: $color-blue !important;
+  text-align: center;
+  &:hover {
+    text-decoration: underline !important;
+    cursor: pointer;
+  }
+}

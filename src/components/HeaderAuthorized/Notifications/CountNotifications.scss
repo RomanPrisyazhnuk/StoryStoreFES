@@ -1,0 +1,13 @@
+.st-count-notifications-wrap {
+    position: absolute;
+    top: -1px;
+    right: -3px;
+    background-color: dodgerblue;
+    border-radius: 5px;
+    text-align: center;
+    .st-count-notifications-number {
+        // max-width: 18px;
+        min-width: 15px;
+        font-size: 10px;
+    }
+}

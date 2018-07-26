@@ -3,7 +3,7 @@
     "apiPrefix": "http://localhost:3000/"
   },
   "development": {
-    "apiPrefix": "http://localhost:3000/"
+    "apiPrefix": "https://story-store-api.herokuapp.com/"
   },
   "test": {
     "apiPrefix": "http://localhost:3000/"

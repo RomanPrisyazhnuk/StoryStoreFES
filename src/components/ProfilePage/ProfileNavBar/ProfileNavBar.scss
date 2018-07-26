@@ -1,0 +1,40 @@
+@import '../../.././utils/Mixins.scss';
+.st-profile-image-block-item {
+  width: 570px;
+  height: 20%;
+  margin-left: 243px;
+  display: flex;
+  justify-content: space-between;
+  .st-profile-image-block-item-tabs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    width: 65%;
+    div {
+      cursor: pointer;
+    }
+    .st-profile-image-block-item-count {
+      margin-right: 5px;
+    }
+  }
+  .st-tabs-wrap {
+    .st-tab.active {
+      padding-top: 10px;
+        @include textStyle($font-size-medium, $color-black !important, bold);
+        &::after{
+          content: '';
+          display: block;
+          position: relative;
+          top: 13px;
+          width: 0;
+          height: 0;
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-bottom: 10px solid $color-dark-gray;
+          bottom: 0;
+          margin: auto;
+      }
+    }
+  }
+}

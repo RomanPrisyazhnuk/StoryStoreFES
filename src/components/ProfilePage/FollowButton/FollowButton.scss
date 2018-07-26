@@ -1,0 +1,15 @@
+.st-follow-button-wrap {
+  align-self: center;
+  .st-follow-button {
+    display: flex;
+    align-self: center;
+    width: 162px;
+    height: 35px;
+    button {
+      width: 100%;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 12px;
+    }
+  }
+}

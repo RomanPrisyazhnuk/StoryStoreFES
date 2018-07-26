@@ -1,0 +1,49 @@
+$color-green: #3bbc53;
+$color-red: #e93700;
+
+.st-about-user-wrap {
+  width: 228px;
+  left: auto;
+  top: auto;
+  .st-about-user-header {
+    position: relative;
+    background-color: #e2e2e5;
+    line-height: 45px;
+    padding: 0 15px;
+  }
+  .st-about-user-content {
+    background-color: white;
+    padding: 15px;
+    min-height: 70px;
+  }
+}
+
+.st-profile-page-online-status{
+  color: $color-green;
+  &:before{
+    background-color: $color-green;
+  }
+}
+
+.st-profile-page-offline-status{
+  color: $color-red;
+  &:before{
+    background-color: $color-red;
+  }
+}
+
+.st-profile-page-status-text{
+  display: flex;
+  font-size: 11px;
+  &:before{
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    margin: auto 5px auto 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+}
+

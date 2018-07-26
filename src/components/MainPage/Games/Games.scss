@@ -1,8 +1,8 @@
-@import '../../.././utils/Mixins.scss';
-.st-posts {
+@import "../../../utils/mixins";
+.st-games {
   max-width: 570px;
-  .st-posts-has-more{
-    @include textStyle($font-size-medium, $color-white, bold);
+  .st-games-has-more{
+    //@include textStyle($font-size-medium, $color-white, bold);
     background-color: $color-blue;
     margin-bottom: 10px;
     text-align: center;

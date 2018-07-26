@@ -1,0 +1,23 @@
+@import '../../.././utils/Mixins.scss';
+.st-profile-contacts-wrap {
+  @include containerStyle (auto, 100%, $margin-large, $color-white);
+  .st-contacts-title {
+    text-align: center;
+  }
+  .st-profile-contacts-title{
+    @include textStyle($font-size-small, $color-darkest-gray, normal);
+  }
+  .st-profile-contacts-value{
+    word-wrap: break-word;
+    @include textStyle($font-size-small, $color-black-blue, normal);
+  }
+  .st-profile-contacts-line{
+    margin-top: $margin-middle;
+    display: flex;
+    width: 100%;
+    span{
+      width: 50%;
+    }
+  }
+}
+

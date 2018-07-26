@@ -1,0 +1,22 @@
+@import '../.././utils/Mixins.scss';
+.st-profile-page {
+  width: 100vw;
+  .st-profile-page-image {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    height: 305px;
+    background: white;
+  }
+  .st-profile-page-content{
+    margin-top: 10px;
+    height: 100%;
+  }
+  .st-profile-image-block-wrap {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    height: 305px;
+    background: white;
+  }
+  #aboutUser{
+    @extend .adaptation-media;
+  }
+}
+

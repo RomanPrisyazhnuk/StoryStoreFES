@@ -12,16 +12,15 @@ const propTypes = {
     games: PropTypes.array.isRequired,
     hasMore: PropTypes.bool.isRequired,
     searchUsers: PropTypes.func.isRequired,
-    showNotification: PropTypes.func.isRequired,
+    // showNotification: PropTypes.func.isRequired,
     getNextData: PropTypes.func.isRequired,
-    getComments: PropTypes.func.isRequired,
+    // getComments: PropTypes.func.isRequired,
     deleteGame: PropTypes.func.isRequired,
     updateGame: PropTypes.func.isRequired,
-    getLinkParse: PropTypes.func.isRequired,
-    getFollowersGame: PropTypes.func.isRequired,
-    getGameOpenDeals: PropTypes.func.isRequired,
+    // getLinkParse: PropTypes.func.isRequired,
+    // getFollowersGame: PropTypes.func.isRequired,
     goProfileAuthor: PropTypes.func.isRequired,
-    goGroup: PropTypes.func.isRequired,
+    // goGroup: PropTypes.func.isRequired,
     isSignIn: PropTypes.bool.isRequired
 };
 
