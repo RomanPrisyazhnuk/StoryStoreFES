@@ -1,4 +1,5 @@
 import './Games.scss';
+import _ from 'lodash';
 import { FormattedMessage } from 'react-intl';
 import Game from 'components/MainPage/Game';
 import PropTypes from 'prop-types';
@@ -25,7 +26,7 @@ const propTypes = {
 };
 
 const Games = (props) => {
-    const {games,
+    let {games,
         newFollowersGames,
         currentUserName,
         currentUserId,
@@ -35,40 +36,39 @@ const Games = (props) => {
         updateGame,
         getLinkParse,
         getFollowersGame,
-        getGameOpenDeals,
         goProfileAuthor,
         isSignIn,
         goGroup,
         syncCharts,
         searchUsers,
-        quotesSettings,
         params} = props;
     const showFollowersGames = () => {
         getFollowersGame(newFollowersGames);
     };
+    games = {gameId1: {id: 5, title: 'game 1', description: 'bla'}, gameId2: {id: 3, title: 'game2', description: 'blabla'}};
     return (
         <div className="st-games">
-            {newFollowersGames.length !== 0 ? <div className="w-100 st-games-has-more" onClick={showFollowersGames}><FormattedMessage id="games.hasNewGames" /></div> : null}
-            {games.map((game) =>
-                <div key={game.id}>
-                    <Game game={game}
-                        currentUserName={currentUserName}
-                        currentUserId={currentUserId}
-                        showNotification={showNotification}
-                        getComments = {getComments}
-                        deleteGame = {deleteGame}
-                        updateGame = {updateGame}
-                        getLinkParse = {getLinkParse}
-                        getGameOpenDeals = {getGameOpenDeals}
-                        goProfileAuthor = {goProfileAuthor}
-                        goGroup = {goGroup}
-                        syncCharts = {syncCharts}
-                        isSignIn = {isSignIn}
-                        searchUsers = {searchUsers}
-                        quoteSettings = {quotesSettings ? quotesSettings[game.quote] : null}
-                        params = {params || {}}
-                    />
-                </div>
+            {newFollowersGames.length !== 0 && <div className="w-100 st-games-has-more" onClick={showFollowersGames}>
+                <FormattedMessage id="games.hasNewGames" />
+            </div>}
+            {_.map(games, (game) =>
+                <Game
+                    key={game.id}
+                    game={game}
+                    currentUserName={currentUserName}
+                    currentUserId={currentUserId}
+                    showNotification={showNotification}
+                    getComments = {getComments}
+                    deleteGame = {deleteGame}
+                    updateGame = {updateGame}
+                    getLinkParse = {getLinkParse}
+                    goProfileAuthor = {goProfileAuthor}
+                    goGroup = {goGroup}
+                    syncCharts = {syncCharts}
+                    isSignIn = {isSignIn}
+                    searchUsers = {searchUsers}
+                    params = {params || {}}
+                />
             )}
         </div>
     );

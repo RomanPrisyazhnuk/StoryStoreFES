@@ -14,9 +14,9 @@ const propTypes = {
     // getComments: PropTypes.func.isRequired,
     deleteGame: PropTypes.func.isRequired,
     updateGame: PropTypes.func.isRequired,
-    getLinkParse: PropTypes.func.isRequired,
+    // getLinkParse: PropTypes.func.isRequired,
     // goProfileAuthor: PropTypes.func.isRequired,
-    goGroup: PropTypes.func.isRequired,
+    // goGroup: PropTypes.func.isRequired,
     isSignIn: PropTypes.bool.isRequired
 };
 
