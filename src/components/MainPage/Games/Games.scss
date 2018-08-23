@@ -1,6 +1,9 @@
 @import "../../../utils/mixins";
 .st-games {
-  max-width: 570px;
+  width: 100%;
+  height: 850px;
+  background-image: url(../../../../public/static/images/backgrAuth.jpg);
+  background-position: center;
   .st-games-has-more{
     //@include textStyle($font-size-medium, $color-white, bold);
     background-color: $color-blue;

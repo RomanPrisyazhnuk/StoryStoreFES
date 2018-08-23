@@ -1,0 +1,9 @@
+@import '../../utils/mixins';
+
+.st-sidebar{
+  width: 100%;
+  height: 850px;
+  background-image: url(../../../public/static/images/sidebar.jpg);
+  background-position: center;
+  background-size: 100% 100%;
+}

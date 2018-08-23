@@ -1,45 +1,12 @@
 @import '../.././utils/mixins.scss';
 
-//$header_font: OpenSans-Regular, sans-serif;
-$header_bg: #16254c;
-$header_color: #fff;
-$header_padding: 10px 0;
-$link-color: #07D;
-
-
 .st-header {
-  height: 75px;
-  .st-header-div {
-    min-width: 353px ;
-    height: 75px;
-    padding: $header_padding;
-    //font-family: $header_font;
-    background-color: $header_bg;
-    color: $header_color;
-    position: fixed;
-    width: 100vw;
-    z-index: 1001;
-    .st-header-wrap {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      .st-header__logo {
-        height: 60px;
-        display: block;
-        img {
-          width: 130px;
-        }
-      }
-      .st-header__image{
-        display: block;
-        cursor: pointer;
-        img {
-          width: 24px;
-          height: 24px;
-        }
-      }
-    }
-  }
+  height: 45px;
+  background-image: url(../../../public/static/images/header.jpg);
+  background-position: center;
+  margin-bottom: 15px;
+  background-position: center;
+  background-size: 100% 100%;
 }
 
 
